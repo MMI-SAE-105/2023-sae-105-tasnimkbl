@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
+@import url('/src/css/utils/variables.css')
+
 @import "base/main.css";
 @import "base/media.css";
 
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/forms.css";
+@import url("/src/css/layout/about.css");
 
 @import "components/button.css";
 @import "components/menu.css";

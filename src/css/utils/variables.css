@@ -1,0 +1,16 @@
+:root {
+/* heading 1 */
+/* Color styles */
+    --couleur-principale: rgba(0, 121, 107, 1);
+    --couleur-secondaire: rgba(119, 200, 180, 1);
+    --couleur-de-fond: rgba(255, 255, 255, 1);
+    --couleur-texte: rgba(51, 51, 51, 1);
+
+    /* Text-size styles */
+    /* base size: body-1 (16px) */
+    --heading-1: 2.25rem;
+    --heading-2: 1.5rem;
+    --heading-3: 1.5rem;
+    --body-1: 1rem;
+    --body-2: 0.75rem;
+}
