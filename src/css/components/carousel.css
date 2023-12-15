@@ -1,0 +1,44 @@
+* {
+    /* change le box model */
+    box-sizing: border-box;
+}
+
+img {
+    /* image responsive, largeur maxi */
+    max-width: 100%;
+    /* hauteur "auto" */
+    height: auto;
+}
+
+.carrousel_parent-ecrans {
+    /* aligne horizontalement les enfants */
+    display: flex;
+    /* largeur du parent */
+    width: 100%;
+    overflow-x: scroll;
+    /* permet de sroller horizontalement */
+    scroll-behavior: smooth;
+    /* animation de défilement */
+    scroll-snap-type: x mandatory;
+    /* permet de scroller par blocs */
+
+}
+
+.carrousel_ecran {
+    scroll-snap-align: start;
+    /* aligne les enfants par bloc */
+    /* largeur du parent pour chaque enfant */
+    width: 100%;
+    /* permet de garder toute la largeur du parent */
+    flex: none
+}
+
+.carrousel_ecran figure {
+    /* enlève les marges par défaut */
+    margin: 0;
+}
+
+.carrousel {
+    position: relative;
+}
+
