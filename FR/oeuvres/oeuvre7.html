@@ -10,31 +10,24 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" x-data="{menuOuvert: false}">
         <div class="header__logo">
             <a href="/">
                 <img class="header__logo" src="/public/img/Logo.svg" alt="Logo de la fondation Cartier">
             </a>
         </div>
-
         <div>
-            <img class="header__menu-btn" src="/public/img/menu-open.svg" alt="Icône du menu">
+            <button @click="menuOuvert = ! menuOuvert"><img class="header__menu-btn" src="/public/img/menu-open.svg"
+                    alt="Icône du menu"></button>
         </div>
-
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__nav-item">
-                    <a href="/index.html">Accueil</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="/exposition.html">Exposition</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="#">Billeterie</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="/oeuvres.html">Oeuvres</a>
-                </li>
+        <nav class="header__menu" x-show="menuOuvert">
+            <button @click="menuOuvert = ! menuOuvert"><img src="/public/img/menu-closed.svg" alt="Croix menu"></button>
+            <ul>
+                <li><a href="/FR/index.html">Accueil</a></li>
+                <li><a href="/FR/exposition.html">Exposition</a></li>
+                <li><a href="#">Billeterie</a></li>
+                <li><a href="/FR/Enric-Miralles.html">Enric Miralles</a></li>
+                <li><a href="/FR/page-oeuvres.html">Oeuvres</a></li>
             </ul>
         </nav>
     </header>

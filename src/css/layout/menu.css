@@ -1,0 +1,17 @@
+.header__menu {
+    position: fixed;
+        /* reste en place lors du défilement */
+        top: 0;
+        /* fixe le menu en haut de la page */
+        left: 0;
+        width: 100vw;
+        /* largeur de la fenêtre */
+        height: 100vh;
+        /* hauteur de la fenêtre*/
+        background: var(--couleur-secondaire);
+        /* couleur de fond */
+        display: flex;
+        /* grille (pour centrer) */
+        flex-direction: column;
+        /* alignement au centre (V et H) */
+}
