@@ -81,6 +81,57 @@
         </figure>
         <img class="frise_image__img" src="/public/img/flèche.svg" alt="flèche frise">
     </section>
+    <div class="carrousel" x-data="{
+            hrefCourant: '#ecran-1',
+    
+        }">
+        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+            console.log('scroll');
+    hrefCourant = '#'+
+                      [...$refs.parent.children]
+                       .find(e=>e.getBoundingClientRect().x>=0)
+                       .id
+                       ">
+            <div id="ecran-1" class="carrousel_ecran">
+                <figure>
+                    <a href="/FR/oeuvres/oeuvre1.html"><img src="/public/img/écosse.webp" alt="parlement"></a>
+                </figure>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <a href="/FR/oeuvres/oeuvre2.html"><img src="/public/img/marché.webp" alt="marché"></a>
+                </figure>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <a href="/FR/oeuvres/oeuvre3.html"><img src="/public/img/palais sport.webp" alt="palais"></a>
+                </figure>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+            <figure>
+                <a href="/FR/oeuvres/oeuvre4.html"><img src="/public/img/cimetière.webp" alt="cimetière"></a>
+            </figure>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <a href="/FR/oeuvres/oeuvre5.html"><img src="/public/img/centremar.webp" alt="centre"></a>
+                </figure>
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <a href="/FR/oeuvres/oeuvre6.html"><img src="/public/img/bibli.webp" alt="bibli"></a>
+                </figure>
+            </div>
+            <div id="ecran-7" class="carrousel_ecran">
+                <figure>
+                    <a href="/FR/oeuvres/oeuvre8.html"><img src="/public/img/auditorium.webp" alt="audi"></a>
+                </figure>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
     
 </body>
 
